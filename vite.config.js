@@ -5,10 +5,12 @@ import { resolve } from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), sentryVitePlugin({
-    org: "jsm-hsy",
-    project: "javascript-react"
-  })],
+  plugins: [react(),],
+  //   sentryVitePlugin({
+  //   org: "jsa-hsy",
+  //   project: "javascript-react",
+  //   authToken: process.env.SENTRY_AUTH_TOKEN
+  // })],
 
   resolve: {
     alias: [
